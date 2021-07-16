@@ -1,0 +1,65 @@
+﻿@model List<string>
+@{
+    ViewData["Title"] = "Home Page";
+}
+<h1>Dados Site</h1>
+<div class="text-center">
+    <p>Site destinado para mostrar todos as imagens de um site e o ranking de palavras.</p>
+</div>
+
+<form asp-controller="Home" asp-action="Listar" method="post">
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text">http://</span>
+        </div>
+        <input type="text" class="form-control" name="url" placeholder="Digite a URL" aria-label="Digite a URL" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+            <input type="submit" value="Pesquisar" class="btn btn-primary" />
+        </div>
+    </div>
+    <div class="row g-3 align-items-center">
+        <div class="col-auto">
+            <label class="col-form-label">Top</label>
+        </div>
+        <div class="col-auto">
+            <input type="number" id="ranking" name="ranking" min="1" value="10" class="form-control">
+        </div>
+    </div>
+</form>
+
+@if (@ViewBag.MsgErro != null)
+{
+    <div class="text-danger">
+        @ViewBag.MsgErro
+    </div>
+}
+
+<div class="col-6">
+    @if (@ViewBag.Ranking != null)
+    {
+        <p class="h4 mt-4">Ranking</p>
+
+        <ol class="list-group mt-4">
+            @foreach (var palavra in @ViewBag.Ranking)
+            {
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    @palavra.Key
+                    <span class="badge badge-primary badge-pill">@palavra.Value</span>
+                </li>
+            }
+        </ol>
+    }
+</div>
+
+
+<div>
+    @if (@ViewBag.Imagens != null)
+    {
+        <p class="h4 mt-4 mb-4">Imagens do site</p>
+
+        @foreach (var imagem in @ViewBag.Imagens)
+        {
+            <img src=@imagem alt="imagem">
+        }
+    }
+</div>

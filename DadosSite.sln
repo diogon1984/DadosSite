@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DadosSite.Web", "DadosSite\DadosSite.Web.csproj", "{A4033A78-3ECB-4871-95D8-DEC2C9FD08FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DadosSite.Negocio", "DadosSite.Negocio\DadosSite.Negocio.csproj", "{6A353C7E-A7F5-438F-82AC-D42477013A89}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A4033A78-3ECB-4871-95D8-DEC2C9FD08FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4033A78-3ECB-4871-95D8-DEC2C9FD08FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4033A78-3ECB-4871-95D8-DEC2C9FD08FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4033A78-3ECB-4871-95D8-DEC2C9FD08FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A353C7E-A7F5-438F-82AC-D42477013A89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A353C7E-A7F5-438F-82AC-D42477013A89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A353C7E-A7F5-438F-82AC-D42477013A89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A353C7E-A7F5-438F-82AC-D42477013A89}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A760941C-6D5F-40AF-8F9A-D27D317306D9}
+	EndGlobalSection
+EndGlobal
